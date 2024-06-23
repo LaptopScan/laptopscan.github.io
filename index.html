@@ -119,16 +119,19 @@
             const outputLine = document.createElement('p');
             switch (command.toLowerCase()) {
                 case 'help':
-                    outputLine.textContent = 'Available commands: help, ?, portfolio, update.';
+                    outputLine.textContent = 'Available commands: help, ?, portfolio, update, ip.';
                     break;
                 case '?':
-                    outputLine.textContent = 'Available commands: help, ?, portfolio, update.';
+                    outputLine.textContent = 'Available commands: help, ?, portfolio, update, ip.';
                     break;
                 case 'update':
                     outputLine.textContent = 'Can\'t update, running on latest version (0.0.1).';
                     break;
                 case 'portfolio':
                     displayPortfolio(content);
+                    break;
+                case 'ip':
+                    outputLine.textContent = 'im not a stalker x, but you live on the planet, and your ip is localhost';
                     break;
                 default:
                     outputLine.textContent = `Command not found: ${command}`;
