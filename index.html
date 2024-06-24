@@ -1,4 +1,4 @@
-ó<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -63,7 +63,7 @@
 </head>
 <body>
     <div class="content" id="terminal-content">
-        <p class="bold">[Website]: Welcome to Kende's Home! Currently running on the latest version (0.0.1).</p>
+        <p class="bold">[Website]: Welcome to Kende's Home! Currently running on the latest version (0.0.5).</p>
         <p>[Website]: Loading page.</p>
         <p>[Website]: Starting web server on 0.0.0.0:80.</p>
     </div>
@@ -125,7 +125,7 @@
                     outputLine.textContent = 'Available commands: help, ?, portfolio, update, ip, rickroll.';
                     break;
                 case 'update':
-                    outputLine.textContent = 'Can\'t update, running on latest version (0.0.1).';
+                    outputLine.textContent = 'Can\'t update, running on latest version (0.0.5).';
                     break;
                 case 'rickroll':
 window.location.href = "https://www.youtube.com/watch?v=mS8cCmAg0HY";
@@ -134,7 +134,7 @@ window.location.href = "https://www.youtube.com/watch?v=mS8cCmAg0HY";
                     displayPortfolio(content);
                     break;
                 case 'ip':
-                    fetchAndDisplayIP(outputLine);
+                    outputLine.textContent = 'yo. i am not a stalker, but yo ip is localhost, and thanks to that ip, i know yo live on the planet.';
                     break;
                 default:
                     outputLine.textContent = `Command not found: ${command}`;
