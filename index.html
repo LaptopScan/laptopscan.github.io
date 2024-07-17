@@ -3,15 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>What?!</title>
+    <title>What?!e</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.lua" type="text/lua"></script>
 </head>
 <body>
-<h1>You wanted to scam yourself?!</h1>
-    <h3>Okay, go ahead.</h3>
-        <input type="text">Discord username:</input>
-    <input type="text">Discord password:</input>
-    <button disabled>Submit</button>
-    <h5>No submit button for you my pookie wookie pie, dont scam urself ^^</h5>
+    <div class="container">
+        <h1>You wanted to scam yourself?!</h1>
+        <p>Okay, go ahead.</p>
+        <form id="scamForm">
+            <input type="text" placeholder="Enter something" id="input1">
+            <input type="password" placeholder="Enter something" id="input2">
+            <button type="button" id="submitBtn">Submit</button>
+        </form>
+        <p class="message">No submit button for you my pookie wookie pie, don't scam urself ^^</p>
+    </div>
 </body>
 </html>
-
